@@ -19,11 +19,14 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.29</version>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>3.10.0-rc-1</version>
         </dependency>
+=======
+>>>>>>> 2869db01f865cc0f88d906db03447f609d2e3fc7
     </dependencies>
 
     <build>
