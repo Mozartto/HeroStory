@@ -3,6 +3,7 @@ package org.tinygame.herostory;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.google.protobuf.GeneratedMessageV3;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -16,6 +17,8 @@ import org.tinygame.herostory.msg.GameMsgProtocol;
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -43,6 +46,9 @@ import org.slf4j.LoggerFactory;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -60,6 +66,7 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
@@ -68,6 +75,8 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
         Broadcaster.addChannel(ctx.channel());
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -102,6 +111,9 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
         _channelGroup.add(ctx.channel());
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -114,6 +126,7 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         super.handlerRemoved(ctx);
 
         // 移除客户端信道
@@ -122,6 +135,8 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
         // 拿到用户 Id
         Integer userId = (Integer) ctx.channel().attr(AttributeKey.valueOf("userId")).get();
 =======
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -138,6 +153,9 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -147,6 +165,7 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
             return;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,10 +185,15 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
         _userMap.remove(userId);
 
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
+        _userMap.remove(userId);
+
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
         GameMsgProtocol.UserQuitResult.Builder resultBuilder = GameMsgProtocol.UserQuitResult.newBuilder();
         resultBuilder.setQuitUserId(userId);
 
         GameMsgProtocol.UserQuitResult newResult = resultBuilder.build();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,10 +207,14 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 =======
         _channelGroup.writeAndFlush(newResult);
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
+        _channelGroup.writeAndFlush(newResult);
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
     }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -230,6 +258,8 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
             return (TCmd) msg;
         }
 =======
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -325,6 +355,9 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 >>>>>>> 2869db01f865cc0f88d906db03447f609d2e3fc7
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6

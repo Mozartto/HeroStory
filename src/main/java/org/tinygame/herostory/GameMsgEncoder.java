@@ -11,6 +11,10 @@ import org.slf4j.LoggerFactory;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import org.tinygame.herostory.msg.GameMsgProtocol;
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 import org.tinygame.herostory.msg.GameMsgProtocol;
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -31,6 +35,7 @@ public class GameMsgEncoder extends ChannelOutboundHandlerAdapter {
     static private final Logger LOGGER = LoggerFactory.getLogger(GameMsgEncoder.class);
 
     @Override
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +70,8 @@ public class GameMsgEncoder extends ChannelOutboundHandlerAdapter {
         BinaryWebSocketFrame frame = new BinaryWebSocketFrame(byteBuf);
         super.write(ctx, frame, promise);
 =======
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -117,6 +124,9 @@ public class GameMsgEncoder extends ChannelOutboundHandlerAdapter {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6

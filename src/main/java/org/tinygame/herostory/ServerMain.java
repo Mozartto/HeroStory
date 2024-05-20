@@ -13,9 +13,15 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tinygame.herostory.cmdhandler.CmdHandlerFactory;
+=======
+import org.apache.log4j.PropertyConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
@@ -45,6 +51,7 @@ public class ServerMain {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 应用主函数
      *
      * @param argArray 参数数组
@@ -56,6 +63,8 @@ public class ServerMain {
         CmdHandlerFactory.init();
         GameMsgRecognizer.init();
 =======
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -74,6 +83,9 @@ public class ServerMain {
         PropertyConfigurator.configure(ServerMain.class.getClassLoader().getResourceAsStream("log4j.properties"));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -100,8 +112,12 @@ public class ServerMain {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     new GameMsgDecoder(), // 自定义的消息解码器
                     new GameMsgEncoder(), // 自定义的消息编码器
+=======
+>>>>>>> 2869db01f865cc0f88d906db03447f609d2e3fc7
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> 2869db01f865cc0f88d906db03447f609d2e3fc7
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -122,10 +138,13 @@ public class ServerMain {
             // 注意: 实际项目中会使用 argArray 中的参数来指定端口号
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             ChannelFuture f = b.bind(12345).sync();
 =======
 <<<<<<< HEAD
             // 注意: 实际项目中会使用 argArray 中的参数来指定端口号
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -136,6 +155,9 @@ public class ServerMain {
             ChannelFuture f = b.bind(SERVER_PORT).sync();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
@@ -153,9 +175,12 @@ public class ServerMain {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             ex.printStackTrace();
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
@@ -171,6 +196,9 @@ public class ServerMain {
             bossGroup.shutdownGracefully();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
+=======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
 =======
 >>>>>>> d109986482a7aa42c6d828e9243651a01462dbb6
